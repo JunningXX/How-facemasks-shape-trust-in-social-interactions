@@ -13,10 +13,25 @@ The goal of this paper is to investigate how facemasks impact judgments about th
 
 In all experiments, masked faces were judged more trustworthy than unmasked ones. While in Experiments 1 and 2 this was not reflected in trust behaviour, in Experiment 3 over 70% of participants chose to trust the masked person, a decision predicted by the difference in perceived trustworthiness between the masked and unmasked counterparts. This suggests that in settings where facemasks or similar trust-related cues are more salient, such as in joint evaluation, they can lead to enhanced trust.
 
+## 📈 Statistical Analysis & Methodology
+
+To ensure robust and reliable conclusions, this project used a variety of statistical techniques to analyse both continuous and binary decision-making data. The analysis pipeline demonstrates proficiency in handling complex experimental designs, including repeated measures and counterbalanced conditions.
+
+Key statistical methods employed in this project include:
+
+* [cite_start]**Power Analysis:** Conducted post-hoc power analyses to verify that the sample sizes provided sufficient statistical power (e.g., > 0.9) to detect the primary effects across all experiments[cite: 97, 349].
+* [cite_start]**Linear Regression & Effect Sizes:** Performed linear regressions to evaluate the impact of experimental manipulations on continuous variables (e.g., trustor allocations and trustworthiness ratings), reporting comprehensive statistics including 95% confidence intervals and Cohen's *d* for effect sizes[cite: 156, 157, 233].
+* [cite_start]**Multi-Level Modeling (Hierarchical Linear Models):** Implemented multi-level regressions to analyse data where participants provided multiple, non-independent responses (e.g., decisions made using the strategy method)[cite: 174, 175, 176]. [cite_start]These models successfully accounted for this lack of independence by incorporating both fixed effects (for experimental conditions, genders, and role order) and random effects for individual participants[cite: 178].
+* [cite_start]**Logistic Regression & Contrast Coding:** Applied logistic regressions to model binary outcome variables, specifically when analysing straight-choice preference data[cite: 374]. [cite_start]Contrast coding was used to re-centre categorical variables, allowing for the precise interpretation of intercepts as log-odds[cite: 376]. 
+* [cite_start]**Robustness Checks:** Validated the findings of the logistic regressions by running supplementary linear probability models to ensure the stability and reliability of the results[cite: 399]. 
+* [cite_start]**Mixed ANOVA:** Conducted 2x2 mixed ANOVAs to examine the main and interaction effects of within-subject and between-subject variables on perceptual ratings[cite: 408].
+
 ## 📂 Repository Structure
 
-* `data/` - Contains the raw experimental data in `.csv` format (includes `Experiment_1.csv`).
-* `scripts/` - Contains the R scripts used for data cleaning, statistical analysis, and generating the figures presented in the paper.
+* `Experiment 1-3/` - Contains all materials for the three experiments, including:
+  * Raw experimental data (`.csv` format)
+  * R scripts for data cleaning, statistical analysis, and generating the paper's figures
+  * Qualtrics surveys used for data collection
 * `README.md` - Project documentation.
 
 ## 📊 Data Description
@@ -31,14 +46,3 @@ For example, `Experiment_1.csv` contains 804 observations and 38 variables. Key 
 * **Attitudes:** Variables mapping COVID-19 vaccine attitudes (`COVID_19_vaccine`), mask attitudes (`Mask_attitude`), and beliefs about mask efficacy.
 * **Comprehension:** Checks for experiment instruction understanding (`Instruction_1` to `Instruction_4`, `understanding_difficulty`).
 
-## 💻 Tech Stack & Dependencies
-
-The analysis for this project was conducted in **R**. To run the scripts, you will need the following R packages installed:
-
-* `tidyverse` (for data manipulation and pipeline)
-* `ggplot2` (for data visualization)
-* `lme4` (for fitting linear mixed-effects models)
-
-You can install the required packages in R using the following command:
-```R
-install.packages(c("tidyverse", "ggplot2", "lme4"))
