@@ -19,12 +19,12 @@ To ensure robust and reliable conclusions, this project used a variety of statis
 
 Key statistical methods employed in this project include:
 
-* [cite_start]**Power Analysis:** Conducted post-hoc power analyses to verify that the sample sizes provided sufficient statistical power (e.g., > 0.9) to detect the primary effects across all experiments[cite: 97, 349].
-* [cite_start]**Linear Regression & Effect Sizes:** Performed linear regressions to evaluate the impact of experimental manipulations on continuous variables (e.g., trustor allocations and trustworthiness ratings), reporting comprehensive statistics including 95% confidence intervals and Cohen's *d* for effect sizes[cite: 156, 157, 233].
-* [cite_start]**Multi-Level Modeling (Hierarchical Linear Models):** Implemented multi-level regressions to analyse data where participants provided multiple, non-independent responses (e.g., decisions made using the strategy method)[cite: 174, 175, 176]. [cite_start]These models successfully accounted for this lack of independence by incorporating both fixed effects (for experimental conditions, genders, and role order) and random effects for individual participants[cite: 178].
-* [cite_start]**Logistic Regression & Contrast Coding:** Applied logistic regressions to model binary outcome variables, specifically when analysing straight-choice preference data[cite: 374]. [cite_start]Contrast coding was used to re-centre categorical variables, allowing for the precise interpretation of intercepts as log-odds[cite: 376]. 
-* [cite_start]**Robustness Checks:** Validated the findings of the logistic regressions by running supplementary linear probability models to ensure the stability and reliability of the results[cite: 399]. 
-* [cite_start]**Mixed ANOVA:** Conducted 2x2 mixed ANOVAs to examine the main and interaction effects of within-subject and between-subject variables on perceptual ratings[cite: 408].
+* **Power Analysis:** Conducted post-hoc power analyses to verify that the sample sizes provided sufficient statistical power (e.g., > 0.9) to detect the primary effects across all experiments.
+* **Linear Regression & Effect Sizes:** Performed linear regressions to evaluate the impact of experimental manipulations on continuous variables (e.g., trustor allocations and trustworthiness ratings), reporting comprehensive statistics including 95% confidence intervals and Cohen's *d* for effect sizes.
+* **Multi-Level Modeling (Hierarchical Linear Models):** Implemented multi-level regressions to analyse data where participants provided multiple, non-independent responses (e.g., decisions made using the strategy method). These models successfully accounted for this lack of independence by incorporating both fixed effects (for experimental conditions, genders, and role order) and random effects for individual participants.
+* **Logistic Regression & Contrast Coding:** Applied logistic regressions to model binary outcome variables, specifically when analysing straight-choice preference data. Contrast coding was used to re-centre categorical variables, allowing for the precise interpretation of intercepts as log-odds. 
+* **Robustness Checks:** Validated the findings of the logistic regressions by running supplementary linear probability models to ensure the stability and reliability of the results. 
+* **Mixed ANOVA:** Conducted 2x2 mixed ANOVAs to examine the main and interaction effects of within-subject and between-subject variables on perceptual ratings.
 
 ## 📂 Repository Structure
 
